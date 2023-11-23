@@ -5,6 +5,7 @@ RUN apt-get update && apt-get -y install --no-install-recommends \
     gcc \
     g++ \
     make \
+    sudo \
     zlib1g-dev \
     ruby \
     ruby-dev
@@ -17,6 +18,7 @@ ARG USER_GID=$USER_UID
 
 # Create the user
 RUN groupadd --gid $USER_GID $USERNAME \
-    && useradd --uid $USER_UID --gid $USER_GID -m $USERNAME
+    && useradd --uid $USER_UID --gid $USER_GID -m $USERNAME \
+    && usermod -aG sudo $USERNAME
 
 USER $USERNAME
