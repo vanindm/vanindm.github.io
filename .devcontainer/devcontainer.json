@@ -4,11 +4,6 @@
         "dockerfile": "Dockerfile",
         "context": ".",
     },
-    "features": {
-        "ghcr.io/devcontainers/features/sshd:1": {
-            "version": "latest"
-        }
-    },
     "customizations": {
         "vscode": {
             "settings": {
@@ -39,6 +34,11 @@
     "forwardPorts": [
         4000
     ],
+    "features": {
+        "ghcr.io/devcontainers/features/sshd:1": {
+            "version": "latest"
+        }
+    },
     "containerEnv": {
         "LC_ALL": "C.UTF-8",
         "LANG": "C.UTF-8",
