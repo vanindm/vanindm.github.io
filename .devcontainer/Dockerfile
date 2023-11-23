@@ -8,6 +8,7 @@ RUN apt-get update && apt-get -y install --no-install-recommends \
     sudo \
     zlib1g-dev \
     ruby \
+    sudo \
     ruby-dev
 
 RUN gem install bundler
@@ -19,6 +20,7 @@ ARG USER_GID=$USER_UID
 # Create the user
 RUN groupadd --gid $USER_GID $USERNAME \
     && useradd --uid $USER_UID --gid $USER_GID -m $USERNAME \
-    && usermod -aG sudo $USERNAME
+    && usermod -aG sudo $USERNAME \
+    && echo "${USERNAME} ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers   
 
 USER $USERNAME
