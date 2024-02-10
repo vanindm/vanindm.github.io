@@ -29,6 +29,11 @@
 	background-color: white;
 }
 
+a {
+	color: #036316;
+	text-decoration: none;
+}
+
 a:link {
 	color: #036316;
 	text-decoration: none;
