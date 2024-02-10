@@ -1,5 +1,37 @@
----
-layout: default
----
+<!DOCTYPE html>
 
-{{ content }}
+{% include head.html %}
+
+<body>
+	<div id="main-box" >
+		{% include header.html %}
+		<main>
+				<article class="">
+					<div class="article-heading">
+						<img src="{{ "assets/svg/left.svg" | relative_url }}" />
+						<div class="upper-gradient-2 line-v">
+							<a href="{{ page.url | relative_url}}" class="upper-element upper-text upper-link">{{ page.title }}</a>
+						</div>
+						<div style="flex-grow: 1" class="upper-gradient-2 line-v">
+							&nbsp;
+						</div>
+						<img src="{{ "assets/svg/right.svg" | relative_url }}" />
+					</div>
+					<div class="article-container">
+						<div class="article-body">
+							{{ page.content }}
+						</div>
+						<div class="article-footer">
+							<div>{{ page.date }}</div>
+						</div>
+					</div>
+				</article>
+		</main>
+		<div id="position-container">
+			&nbsp;
+		</div>
+		<footer>
+			2024 - Ванин Дмитрий
+		</footer>
+	</div>
+</body>
