@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: general
 title: Про сайт
 permalink: /about/
 ---

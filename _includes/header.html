@@ -4,12 +4,12 @@
 			<div style="background: white;">
 				<div class="line-under upper-gradient">
 					<span>
-						<a id="upper-logo" class="upper-text">{{ site.title }}</a>
+						<a id="upper-logo" class="upper-text" style="color: black;">{{ site.title }}</a>
 					</span>
 				</div>
 			</div>
 			{% for page in site.pages %}
-				{% if page.layout == "home" %}
+				{% if page.layout == "home" or page.layout == "general" %}
 				<img style="background: white;" id="separator" src="{{ "assets/svg/sep.svg" | relative_url }}" />
 					<div class="upper-gradient-2 line-under">
 						<a href="{{ "" | absolute_url }}/" class="upper-element upper-text upper-link">{{ page.title }}</a>
