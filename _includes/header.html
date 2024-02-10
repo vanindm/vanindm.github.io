@@ -12,7 +12,7 @@
 			{% for page in site.pages %}
 				{% if page.layout == "home" or page.layout == "general" %}
 					<div class="upper-gradient-2 line-under">
-						<a href="{{ "" | absolute_url }}/" class="upper-element upper-text upper-link">{{ page.title }}</a>
+						<a href="{{ page.url | absolute_url }}/" class="upper-element upper-text upper-link">{{ page.title }}</a>
 					</div>
 					<img id="separator" src="{{ "assets/svg/sep-2.svg" | relative_url }}" />
 				{% endif %}
