@@ -16,7 +16,7 @@ sass:
   style: compressed
 
 # use custom theme
-theme: null
+remote_theme: vanindm/dvanin-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
