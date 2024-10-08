@@ -8,4 +8,4 @@ permalink: /lycinfosec/
 
 Список материалов спецкурса "Информационная безопасость", проходящего в Лицее МИФИ.
 
-* [Домашнее задание №1](./Lyc-Infosec/assignment_1.pdf)
+* [Домашнее задание №1](/Lyc-Infosec/assignment_1.pdf)
